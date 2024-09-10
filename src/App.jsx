@@ -14,8 +14,7 @@ const App = () => {
   const handleChange = ({ target }) => {
     setSearchVal(target.value);
   };
-  const wiki_url = import.meta.env.VITE_APP_URL;
-  const url = `${wiki_url} + ${searchVal}`;
+  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchVal}`;
 
   const options = {
     method: 'GET',
