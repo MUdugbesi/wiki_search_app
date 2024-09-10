@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Input = ({ type, onClick, className, onChange, onKeyDown }) => {
   return (
     <input

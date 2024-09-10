@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { RiCloseLine, RiSearchLine } from 'react-icons/ri';
-import Input from './components/input';
+import Input from './components/Input';
 import ResultCard from './containers/ResultCard';
 
 const App = () => {
