@@ -1,4 +1,5 @@
 import parse from 'html-react-parser';
+
 const ResultCard = ({ item }) => {
   const pasrseItem = parse(item.snippet);
   const url = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
@@ -13,7 +14,7 @@ const ResultCard = ({ item }) => {
           <p className='italic text-sm mb-3'>{pasrseItem}</p>
         </div>
         <div className='flex justify-end'>
-          <button>
+          <button className='shadow-black shadow-sm hover:shadow-white hover:shadow-md'>
             <a href={url}>View Article</a>
           </button>
         </div>
